@@ -36,9 +36,10 @@ while (arr.length > 1)
         else
             mask += '1';
     }
-    for (let j = 1; j < arr.length; j++)
+   // alert (mask);
+    let j = arr.length;
+    while (j--)
     {
-     alert (arr[j][i]);
         if (arr[j][i] != mask[i])
             arr.splice(j, 1);
     }
@@ -46,3 +47,37 @@ while (arr.length > 1)
 
 let output = arr.toString();
 alert(output);
+
+let arr2 = s.split('\n');
+let i2 = -1;
+while (arr2.length > 1)
+{
+    let mask2 = ''
+    i2++;
+    for (let digit = 0; digit < len; digit++)
+    {
+        let zeros = 0;
+        let ones = 0;
+        for (number of arr2)
+        {
+            if (number[digit] == '0')
+                ++zeros;
+            if (number[digit] == '1')
+                ++ones;
+        }
+        if (zeros <= ones)
+            mask2 += '0';
+        else
+            mask2 += '1';
+    }
+   // alert (mask);
+    let j2 = arr.length;
+    while (j2--)
+    {
+        if (arr2[j2][i2] != mask2[i2])
+            arr2.splice(j2, 1);
+    }
+}
+
+let output2 = arr2.toString();
+alert(output2);
