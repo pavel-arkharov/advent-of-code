@@ -36,7 +36,7 @@ while (arr.length > 1)
         else
             mask += '1';
     }
-   // alert (mask);
+   // console.log (mask);
     let j = arr.length;
     while (j--)
     {
@@ -46,7 +46,7 @@ while (arr.length > 1)
 }
 
 let output = arr.toString();
-alert(output);
+console.log(output);
 
 let arr2 = s.split('\n');
 let i2 = -1;
@@ -70,8 +70,8 @@ while (arr2.length > 1)
         else
             mask2 += '1';
     }
-   // alert (mask);
-    let j2 = arr.length;
+   // console.log (mask);
+    let j2 = arr2.length;
     while (j2--)
     {
         if (arr2[j2][i2] != mask2[i2])
@@ -80,4 +80,4 @@ while (arr2.length > 1)
 }
 
 let output2 = arr2.toString();
-alert(output2);
+console.log(output2);
